@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarjeteros digitales NFC y QR de CodePOS MX. Comparte tus datos, redes, menú o reseñas con un toque.">
+    <meta name="theme-color" content="#07162f">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tarjeteros NFC y QR | CodePOS MX">
+    <meta property="og:description" content="Comparte los datos, redes, menú o enlaces de tu negocio mediante NFC y códigos QR.">
+    <meta property="og:url" content="https://altamirano-code.github.io/CodePOSMX-page/nfc.html">
+    <meta property="og:image" content="https://altamirano-code.github.io/CodePOSMX-page/public/tarjetero.jpeg">
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+    <title>Tarjeteros NFC y QR | CodePOS MX</title>
+
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="nfc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         ENCABEZADO Y MENÚ
+    ======================================== -->
+
+    <header class="nav-wrap">
+        <nav class="container nav">
+
+            <a class="brand" href="index.html">
+                <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <circle cx="22" cy="22" r="18" stroke="#07162f" stroke-width="2.8"/>
+                    <path d="M4.8 17h34.4M4.8 27h23.7M22 4c-5.8 5-8.7 11-8.7 18s2.9 13 8.7 18M22 4c5.8 5 8.7 11 8.7 18" stroke="#07162f" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="m24 24 8 6-8 6M35 23l-3 14" stroke="#1677ff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>CodePOS <span class="mx">MX</span></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-controls="navLinks"
+                aria-expanded="false"
+                type="button"
+            >
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#soluciones">Soluciones</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#preguntas">Preguntas frecuentes</a>
+            </div>
+
+            <a class="nav-cta" href="#contacto">
+                Cotizar mi tarjetero →
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========================================
+             PORTADA
+        ======================================== -->
+
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+
+                <div>
+                    <span class="eyebrow">
+                        <i></i>
+                        NFC + QR · Conecta de forma inteligente
+                    </span>
+
+                    <h1>
+                        Tu negocio, a un toque de
+                        <em>distancia.</em>
+                    </h1>
+
+                    <p class="lead">
+                        Comparte tus datos, redes sociales, menú o información
+                        de tu negocio con tarjeteros digitales NFC y códigos QR.
+                        Una experiencia práctica, moderna y con la identidad
+                        de tu marca.
+                    </p>
+
+                    <div class="actions">
+                        <a class="btn primary" href="#contacto">
+                            Quiero mi tarjetero →
+                        </a>
+
+                        <a class="btn secondary" href="#como-funciona">
+                            Descubre cómo funciona
+                        </a>
+                    </div>
+
+                    <p class="note">
+                        ✓ Personalizable para tu negocio · Opción NFC, QR o ambos
+                    </p>
+                </div>
+
+                <div class="hero-art">
+
+                    <div class="orb"></div>
+
+                    <div class="nfc-card">
+                        <div class="card-top">
+                            <span>CodePOS <b>MX</b></span>
+                            <span>)))</span>
+                        </div>
+
+                        <div class="chip">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                        <h3>Tu marca aquí</h3>
+
+                        <div class="card-bottom">
+                            Conecta con un toque
+                            <b>↗</b>
+                        </div>
+                    </div>
+
+                    <div class="tag tag-one">
+                        ⌁
+                        <span>
+                            Acerca tu celular
+                            <small>y conecta</small>
+                        </span>
+                    </div>
+
+                    <div class="tag tag-two">
+                        ▦
+                        <span>
+                            NFC + QR
+                            <small>Dos formas de conectar</small>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             INTRODUCCIÓN
+        ======================================== -->
+
+        <section class="section">
+            <div class="container two-col">
+
+                <div>
+                    <span class="kicker">
+                        Una forma más fácil de conectar
+                    </span>
+
+                    <h2>
+                        Menos pasos para compartir.
+                        <em>Más oportunidades para tu negocio.</em>
+                    </h2>
+                </div>
+
+                <div class="muted">
+                    <p>
+                        Compartir tu información no debería ser complicado.
+                        En lugar de dictar un número, buscar un perfil o
+                        entregar tarjetas que pueden perderse, ofrece un punto
+                        de acceso sencillo a tus datos digitales.
+                    </p>
+
+                    <p>
+                        Con un tarjetero NFC y QR, tus clientes pueden abrir
+                        el enlace que elijas desde un teléfono compatible
+                        o escanear el código con la cámara.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+             CÓMO FUNCIONA
+        ======================================== -->
+
+        <section class="section soft" id="como-funciona">
+            <div class="container">
+
+                <div class="heading">
+                    <span class="kicker">Así de sencillo</span>
+                    <h2>Conecta en tres pasos</h2>
+
+                    <p>
+                        Una experiencia simple para ti y para las personas
+                        que visitan tu negocio.
+                    </p>
+                </div>
+
+                <div class="steps">
+
+                    <article>
+                        <span class="num">01</span>
+                        <div class="icon">✳</div>
+
+                        <h3>Personalizamos</h3>
+
+                        <p>
+                            Definimos contigo qué información quieres compartir
+                            y adaptamos la solución a tu marca.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="num">02</span>
+                        <div class="icon">⌁</div>
+
+                        <h3>Acerca o escanea</h3>
+
+                        <p>
+                            La persona acerca un celular compatible con NFC
+                            o escanea el código QR.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="num">03</span>
+                        <div class="icon">↗</div>
+
+                        <h3>Abre tu enlace</h3>
+
+                        <p>
+                            Se abre el destino configurado: tus datos, redes,
+                            menú, página o enlace de reseñas.
+                        </p>
+                    </article>
+
+                </div>
+
+                <p class="fine">
+                    La lectura NFC depende de que el teléfono sea compatible
+                    y tenga la función disponible. Para abrir enlaces se
+                    requiere conexión a internet.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+             SOLUCIONES
+        ======================================== -->
+
+        <section class="section" id="soluciones">
+            <div class="container">
+
+                <div class="heading">
+                    <span class="kicker">
+                        Una solución para cada objetivo
+                    </span>
+
+                    <h2>¿Qué quieres compartir?</h2>
+
+                    <p>
+                        Podemos orientar el tarjetero al tipo de interacción
+                        que más le convenga a tu negocio.
+                    </p>
+                </div>
+
+                <div class="cards">
+
+                    <!-- Tarjeta de presentación -->
+
+                    <article class="service-card">
+
+                        <div class="visual contact">
+                            <div>
+                                <div class="avatar">CP</div>
+                                <div class="line long"></div>
+                                <div class="line"></div>
+
+                                <div class="pills">
+                                    <span>WhatsApp</span>
+                                    <span>Contacto</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-copy">
+                            <small>NETWORKING</small>
+
+                            <h3>Tarjeta de presentación digital</h3>
+
+                            <p>
+                                Comparte tu nombre, teléfono, correo y redes
+                                sin depender de tarjetas impresas tradicionales.
+                            </p>
+
+                            <a
+                                href="#contacto"
+                                data-interest="Tarjeta de presentación digital"
+                            >
+                                Cotizar esta opción →
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <!-- Redes sociales -->
+
+                    <article class="service-card">
+
+                        <div class="visual social">
+                            <div class="social-icon">◎</div>
+
+                            <span class="bubble b1">Instagram</span>
+                            <span class="bubble b2">Facebook</span>
+                            <span class="bubble b3">TikTok</span>
+                        </div>
+
+                        <div class="card-copy">
+                            <small>COMUNIDAD</small>
+
+                            <h3>Redes sociales</h3>
+
+                            <p>
+                                Facilita que tus clientes encuentren tus
+                                perfiles y conozcan más de lo que haces.
+                            </p>
+
+                            <a
+                                href="#contacto"
+                                data-interest="Redes sociales"
+                            >
+                                Cotizar esta opción →
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <!-- Reseñas -->
+
+                    <article class="service-card">
+
+                        <div class="visual reviews">
+                            <div class="stars">★★★★★</div>
+
+                            <strong>Tu opinión nos ayuda</strong>
+
+                            <span class="review-btn">
+                                Dejar reseña ↗
+                            </span>
+
+                            <small>Un acceso directo a tu enlace</small>
+                        </div>
+
+                        <div class="card-copy">
+                            <small>REPUTACIÓN</small>
+
+                            <h3>Reseñas de tu negocio</h3>
+
+                            <p>
+                                Dirige a tus clientes a tu enlace de reseñas
+                                para que puedan compartir su experiencia.
+                            </p>
+
+                            <a
+                                href="#contacto"
+                                data-interest="Reseñas de mi negocio"
+                            >
+                                Cotizar esta opción →
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <!-- Menús y páginas web -->
+
+                    <article class="service-card">
+
+                        <div class="visual menu">
+
+                            <div class="menu-sheet">
+                                <b>MENÚ</b>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <div class="qr">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                        <div class="card-copy">
+                            <small>ATENCIÓN AL CLIENTE</small>
+
+                            <h3>Menús y páginas web</h3>
+
+                            <p>
+                                Conecta el mostrador o la mesa con un menú
+                                digital o la página web de tu negocio.
+                            </p>
+
+                            <a
+                                href="#contacto"
+                                data-interest="Menú o página web"
+                            >
+                                Cotizar esta opción →
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             BENEFICIOS
+        ======================================== -->
+
+        <section class="section soft" id="beneficios">
+            <div class="container">
+
+                <div class="heading">
+                    <span class="kicker">Tecnología práctica</span>
+
+                    <h2>Pequeño detalle. Gran comodidad.</h2>
+
+                    <p>
+                        Una manera actual de acercar tu información
+                        a las personas.
+                    </p>
+                </div>
+
+                <div class="benefits">
+
+                    <article>
+                        <div class="icon">⌁</div>
+                        <h3>Fácil de usar</h3>
+
+                        <p>
+                            Acerca un teléfono compatible o escanea el QR
+                            para abrir el enlace.
+                        </p>
+                    </article>
+
+                    <article>
+                        <div class="icon">✳</div>
+                        <h3>Con tu identidad</h3>
+
+                        <p>
+                            Una solución pensada para presentar tu negocio
+                            de forma profesional.
+                        </p>
+                    </article>
+
+                    <article>
+                        <div class="icon">▦</div>
+                        <h3>NFC y QR</h3>
+
+                        <p>
+                            Elige una tecnología o combina ambas según
+                            tus necesidades.
+                        </p>
+                    </article>
+
+                    <article>
+                        <div class="icon">↗</div>
+                        <h3>Flexible</h3>
+
+                        <p>
+                            Puede dirigir a distintos tipos de enlaces
+                            según el objetivo acordado.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             TIPOS DE NEGOCIO
+        ======================================== -->
+
+        <section class="section">
+            <div class="container use-grid">
+
+                <div>
+                    <span class="kicker">
+                        Para negocios y profesionales
+                    </span>
+
+                    <h2>
+                        Tu negocio puede conectar de muchas formas.
+                    </h2>
+
+                    <p class="muted">
+                        Los tarjeteros digitales pueden ser útiles en espacios
+                        donde compartir información de forma rápida mejora
+                        la experiencia del cliente.
+                    </p>
+
+                    <a class="btn primary" href="#contacto">
+                        Platiquemos de tu idea →
+                    </a>
+                </div>
+
+                <div class="tags">
+                    <span>Restaurantes</span>
+                    <span>Cafeterías</span>
+                    <span>Barberías</span>
+                    <span>Consultorios</span>
+                    <span>Tiendas</span>
+                    <span>Profesionales</span>
+                    <span>Eventos</span>
+                    <span>Hoteles</span>
+                    <span>Emprendimientos</span>
+                    <span>Gimnasios</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+             PREGUNTAS FRECUENTES
+        ======================================== -->
+
+        <section class="section soft" id="preguntas">
+            <div class="container faq-grid">
+
+                <div>
+                    <span class="kicker">Resolvemos tus dudas</span>
+
+                    <h2>Preguntas frecuentes</h2>
+
+                    <p class="muted">
+                        ¿Tienes una idea diferente? Cuéntanos qué quieres lograr.
+                    </p>
+                </div>
+
+                <div class="faqs">
+
+                    <details>
+                        <summary>¿Qué es un tarjetero NFC?</summary>
+
+                        <p>
+                            Es una tarjeta o soporte con un chip NFC que permite
+                            que un teléfono compatible detecte un enlace al
+                            acercarlo. La persona puede necesitar tocar la
+                            notificación para abrirlo.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿También puedo usar un código QR?</summary>
+
+                        <p>
+                            Sí. Podemos incluir NFC, QR o ambos. El QR ofrece
+                            una alternativa para personas cuyos teléfonos
+                            no tengan NFC disponible.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Necesito instalar una aplicación?</summary>
+
+                        <p>
+                            Normalmente no se necesita una aplicación especial
+                            para leer un enlace NFC o QR. El comportamiento
+                            puede variar según el dispositivo.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Qué información puede abrir?</summary>
+
+                        <p>
+                            Puede dirigir a una tarjeta de contacto, redes
+                            sociales, menú digital, página de reseñas u otro
+                            enlace acordado.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Puedo personalizarlo con mi marca?</summary>
+
+                        <p>
+                            Podemos revisar las opciones de personalización
+                            disponibles según el tipo de tarjetero y la cantidad
+                            que necesites.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Cuánto cuesta y cuánto tarda?</summary>
+
+                        <p>
+                            El precio y el tiempo dependen del tipo de producto,
+                            personalización y cantidad. Escríbenos para preparar
+                            una cotización.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTACTO
+        ======================================== -->
+
+        <section class="section" id="contacto">
+            <div class="container">
+
+                <div class="contact-panel">
+
+                    <div>
+                        <span class="kicker">
+                            Hagamos que tu idea conecte
+                        </span>
+
+                        <h2>
+                            ¿Listo para darle un toque digital a tu negocio?
+                        </h2>
+
+                        <p>
+                            Cuéntanos qué necesitas compartir y te ayudamos
+                            a encontrar una opción NFC, QR o combinada.
+                        </p>
+
+                        <div class="contact-points">
+                            <span>✓ Atención personalizada</span>
+                            <span>✓ Soluciones a tu medida</span>
+                        </div>
+                    </div>
+
+                    <form id="contactForm">
+
+                        <label for="name">Tu nombre</label>
+
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            required
+                            placeholder="¿Cómo te llamas?"
+                        >
+
+                        <label for="business">
+                            Nombre del negocio (opcional)
+                        </label>
+
+                        <input
+                            id="business"
+                            name="business"
+                            type="text"
+                            placeholder="Nombre de tu negocio"
+                        >
+
+                        <label for="interest">¿Qué te interesa?</label>
+
+                        <select id="interest" name="interest">
+                            <option>Tarjetero NFC + QR</option>
+                            <option>Tarjeta de presentación digital</option>
+                            <option>Redes sociales</option>
+                            <option>Reseñas de mi negocio</option>
+                            <option>Menú o página web</option>
+                            <option>Quiero asesoría</option>
+                        </select>
+
+                        <label for="message">Cuéntanos un poco más</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="3"
+                            placeholder="¿Qué te gustaría que abriera tu tarjetero?"
+                        ></textarea>
+
+                        <button class="btn primary submit" type="submit">
+                            Preparar mensaje por correo →
+                        </button>
+
+                        <p class="form-note">
+                            Se abrirá tu aplicación de correo con el mensaje
+                            preparado para codeposmx@gmail.com.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         PIE DE PÁGINA
+    ======================================== -->
+
+    <footer>
+        <div class="container footer-inner">
+
+            <a class="brand" href="#inicio">
+                <span class="globe">◎</span>
+                <span>CodePOS <b>MX</b></span>
+            </a>
+
+            <p>
+                Soluciones digitales para impulsar tu negocio.
+            </p>
+
+            <div class="social-links">
+                <a
+                    href="https://www.instagram.com/codeposmx/?hl=es-lam"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Instagram ↗
+                </a>
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=61595543454633"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Facebook ↗
+                </a>
+
+                <a href="mailto:codeposmx@gmail.com">
+                    Correo ↗
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container copyright">
+            © <span id="year"></span> CodePOS MX. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JAVASCRIPT INCORPORADO
+    ======================================== -->
+
+    <script>
+        // ========================================
+        // MENÚ PARA DISPOSITIVOS MÓVILES
+        // ========================================
+
+        const toggle = document.getElementById("menuToggle");
+        const links = document.getElementById("navLinks");
+
+        if (toggle && links) {
+            const setMenuOpen = (open) => {
+                links.classList.toggle("open", open);
+                toggle.setAttribute("aria-expanded", String(open));
+                toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+                toggle.textContent = open ? "×" : "☰";
+            };
+            toggle.addEventListener("click", () => {
+                setMenuOpen(toggle.getAttribute("aria-expanded") !== "true");
+            });
+
+            // Cierra el menú cuando se selecciona una sección.
+            links.querySelectorAll("a").forEach((a) => {
+                a.addEventListener("click", () => {
+                    setMenuOpen(false);
+                });
+            });
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") setMenuOpen(false);
+            });
+        }
+
+        // ========================================
+        // AÑO AUTOMÁTICO DEL PIE DE PÁGINA
+        // ========================================
+
+        const year = document.getElementById("year");
+
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+
+        if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            }), { threshold: 0.12 });
+            document.querySelectorAll("main .heading, main .two-col, main .steps, main .cards, main .benefits, main .use-grid, main .faq-grid, main .contact-panel").forEach((element) => {
+                element.classList.add("js-reveal");
+                observer.observe(element);
+            });
+        }
+
+        // ========================================
+        // SELECCIÓN AUTOMÁTICA DE LA SOLUCIÓN
+        // ========================================
+
+        document.querySelectorAll("[data-interest]").forEach((a) => {
+            a.addEventListener("click", () => {
+                const select = document.getElementById("interest");
+                const value = a.dataset.interest;
+
+                if (
+                    select &&
+                    [...select.options].some((option) => option.text === value)
+                ) {
+                    select.value = value;
+                }
+            });
+        });
+
+        // ========================================
+        // FORMULARIO DE CONTACTO
+        // ========================================
+
+        const contactForm = document.getElementById("contactForm");
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                const formData = new FormData(event.currentTarget);
+
+                const subject = encodeURIComponent(
+                    "Información sobre tarjeteros NFC/QR - " +
+                    formData.get("interest")
+                );
+
+                const body = encodeURIComponent(
+                    `Hola CodePOS MX,\n\n` +
+                    `Me interesa recibir información sobre: ${formData.get("interest")}.\n\n` +
+                    `Nombre: ${formData.get("name")}\n` +
+                    `Negocio: ${formData.get("business") || "No indicado"}\n` +
+                    `Detalles: ${formData.get("message") || "Me gustaría conocer las opciones disponibles."}\n\n` +
+                    `Enviado desde la página de tarjeteros NFC y QR.`
+                );
+
+                // Abre el programa de correo con el mensaje preparado.
+                window.location.href =
+                    `mailto:codeposmx@gmail.com?subject=${subject}&body=${body}`;
+            });
+        }
+    </script>
+
+</body>
+</html>
